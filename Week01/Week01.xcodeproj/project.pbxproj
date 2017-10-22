@@ -16,6 +16,8 @@
 		CE5AA0D71F9CBE2D00222BFA /* RWNameListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AA0D21F9CB90900222BFA /* RWNameListVC.swift */; };
 		CE5AA0DC1F9CBE4E00222BFA /* RWTipCaculatorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5AA0D51F9CB91000222BFA /* RWTipCaculatorVC.xib */; };
 		CE5AA0DD1F9CBE4E00222BFA /* RWNameListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5AA0D31F9CB90900222BFA /* RWNameListVC.xib */; };
+		CE5AA0E11F9CC32700222BFA /* RWTimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AA0DF1F9CC32700222BFA /* RWTimerVC.swift */; };
+		CE5AA0E21F9CC32700222BFA /* RWTimerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5AA0E01F9CC32700222BFA /* RWTimerVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CE5AA0D31F9CB90900222BFA /* RWNameListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RWNameListVC.xib; sourceTree = "<group>"; };
 		CE5AA0D41F9CB91000222BFA /* RWTipCaculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWTipCaculatorVC.swift; sourceTree = "<group>"; };
 		CE5AA0D51F9CB91000222BFA /* RWTipCaculatorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RWTipCaculatorVC.xib; sourceTree = "<group>"; };
+		CE5AA0DF1F9CC32700222BFA /* RWTimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWTimerVC.swift; sourceTree = "<group>"; };
+		CE5AA0E01F9CC32700222BFA /* RWTimerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RWTimerVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		CE5AA0BD1F9CB8BA00222BFA /* Week01 */ = {
 			isa = PBXGroup;
 			children = (
+				CE5AA0DE1F9CC31800222BFA /* Project03 */,
 				CE5AA0D01F9CB8DA00222BFA /* Project01 */,
 				CE5AA0D11F9CB8E600222BFA /* Project02 */,
 				CE5AA0BE1F9CB8BA00222BFA /* AppDelegate.swift */,
@@ -90,6 +95,15 @@
 				CE5AA0D31F9CB90900222BFA /* RWNameListVC.xib */,
 			);
 			path = Project02;
+			sourceTree = "<group>";
+		};
+		CE5AA0DE1F9CC31800222BFA /* Project03 */ = {
+			isa = PBXGroup;
+			children = (
+				CE5AA0DF1F9CC32700222BFA /* RWTimerVC.swift */,
+				CE5AA0E01F9CC32700222BFA /* RWTimerVC.xib */,
+			);
+			path = Project03;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +168,7 @@
 				CE5AA0DC1F9CBE4E00222BFA /* RWTipCaculatorVC.xib in Resources */,
 				CE5AA0DD1F9CBE4E00222BFA /* RWNameListVC.xib in Resources */,
 				CE5AA0C91F9CB8BA00222BFA /* LaunchScreen.storyboard in Resources */,
+				CE5AA0E21F9CC32700222BFA /* RWTimerVC.xib in Resources */,
 				CE5AA0C61F9CB8BA00222BFA /* Assets.xcassets in Resources */,
 				CE5AA0C41F9CB8BA00222BFA /* Main.storyboard in Resources */,
 			);
@@ -168,6 +183,7 @@
 			files = (
 				CE5AA0D61F9CBE2D00222BFA /* RWTipCaculatorVC.swift in Sources */,
 				CE5AA0D71F9CBE2D00222BFA /* RWNameListVC.swift in Sources */,
+				CE5AA0E11F9CC32700222BFA /* RWTimerVC.swift in Sources */,
 				CE5AA0C11F9CB8BA00222BFA /* ViewController.swift in Sources */,
 				CE5AA0BF1F9CB8BA00222BFA /* AppDelegate.swift in Sources */,
 			);
