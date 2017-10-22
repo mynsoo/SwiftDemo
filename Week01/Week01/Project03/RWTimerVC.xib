@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RWTimerVC" customModule="Week01" customModuleProvider="target">
+            <connections>
+                <outlet property="counterLb" destination="wFr-hZ-uaj" id="ytQ-Bd-19T"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFr-hZ-uaj">
+                    <rect key="frame" x="15" y="233.5" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS5-Ah-wiL">
+                    <rect key="frame" x="0.0" y="318.5" width="125" height="30"/>
+                    <state key="normal" title="Play"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbV-5Z-zKd">
+                    <rect key="frame" x="125" y="318.5" width="125" height="30"/>
+                    <state key="normal" title="Pause"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hih-40-swb">
+                    <rect key="frame" x="250" y="318.5" width="125" height="30"/>
+                    <state key="normal" title="Reset"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VS5-Ah-wiL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3PG-85-d71"/>
+                <constraint firstItem="cbV-5Z-zKd" firstAttribute="leading" secondItem="VS5-Ah-wiL" secondAttribute="trailing" id="4UB-Bo-giM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hih-40-swb" secondAttribute="trailing" id="4Xk-EC-9fO"/>
+                <constraint firstItem="hih-40-swb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="50W-nZ-g3F"/>
+                <constraint firstItem="cbV-5Z-zKd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7JT-kb-Yvq"/>
+                <constraint firstItem="wFr-hZ-uaj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="9ND-AD-Ydh"/>
+                <constraint firstItem="cbV-5Z-zKd" firstAttribute="leading" secondItem="VS5-Ah-wiL" secondAttribute="trailing" id="Du6-73-434"/>
+                <constraint firstItem="cbV-5Z-zKd" firstAttribute="centerY" secondItem="VS5-Ah-wiL" secondAttribute="centerY" id="MY6-ah-d5H"/>
+                <constraint firstItem="VS5-Ah-wiL" firstAttribute="width" secondItem="cbV-5Z-zKd" secondAttribute="width" id="cBE-eM-iz3"/>
+                <constraint firstItem="hih-40-swb" firstAttribute="leading" secondItem="cbV-5Z-zKd" secondAttribute="trailing" id="iHg-mJ-NQq"/>
+                <constraint firstItem="VS5-Ah-wiL" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="pq9-8J-iWy"/>
+                <constraint firstItem="cbV-5Z-zKd" firstAttribute="width" secondItem="hih-40-swb" secondAttribute="width" id="rvi-4M-hKU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wFr-hZ-uaj" secondAttribute="trailing" constant="15" id="v5U-oy-RLB"/>
+                <constraint firstItem="VS5-Ah-wiL" firstAttribute="top" secondItem="wFr-hZ-uaj" secondAttribute="bottom" constant="64" id="wB0-6J-Gzd"/>
+                <constraint firstItem="hih-40-swb" firstAttribute="centerY" secondItem="VS5-Ah-wiL" secondAttribute="centerY" id="yIQ-8l-yI7"/>
+                <constraint firstItem="hih-40-swb" firstAttribute="leading" secondItem="cbV-5Z-zKd" secondAttribute="trailing" id="ziF-wV-FBE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.5" y="78.5"/>
+        </view>
+    </objects>
+</document>

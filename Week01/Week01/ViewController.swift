@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // MARK - PROPERTY
     @IBOutlet weak var mainTableView: UITableView!
-    let sections = ["RWTipCaculatorVC","RWNamesListVC"];
+    let sections = ["RWTipCaculatorVC","RWNameListVC","RWTimerVC"];
     
     // MARK - LIFE CYCLE
     override func viewDidLoad() {
@@ -31,10 +31,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell;
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if(indexPath.row == 0){
+        
+        switch indexPath.row {
+        case 0:do {
             navigationController?.pushViewController(RWTipCaculatorVC(), animated: true);
-        }else {
+            }
+        case 1:do {
             navigationController?.pushViewController(RWNameListVC(), animated: true);
+            }
+        case 2:do {
+            navigationController?.pushViewController(RWTimerVC(), animated: true);
+            }
+        default:do {
+            
+            }
         }
     }
 }
