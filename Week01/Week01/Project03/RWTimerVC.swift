@@ -26,21 +26,25 @@ class RWTimerVC: UIViewController {
         RunLoop.main.add(timer, forMode: .commonModes);
     }
     
+    // MARK - FUNCTION
+    @IBAction func play(_ sender: UIButton) {
+        _isPlay = true;
+    }
+    
+    @IBAction func pause(_ sender: Any) {
+        _isPlay = false;
+    }
+    
+    @IBAction func reset(_ sender: Any) {
+        _counter = 0;
+        _isPlay = false;
+        counterLb.text = "0.0"
+    }
     func update() {
         if(_isPlay) {
             _counter += 0.1;
-            counterLb.text = String.init(format: "%.2f", _counter);
+            counterLb.text = String.init(format: "%.1f", _counter);
         }
-    }
-    func play() {
-        _isPlay = true;
-    }
-    func pause() {
-        _isPlay = false;
-    }
-    func reset() {
-        _counter = 0;
-        _isPlay = false;
     }
 }
 

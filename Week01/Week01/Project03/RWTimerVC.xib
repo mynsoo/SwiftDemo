@@ -29,14 +29,23 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS5-Ah-wiL">
                     <rect key="frame" x="0.0" y="318.5" width="125" height="30"/>
                     <state key="normal" title="Play"/>
+                    <connections>
+                        <action selector="play:" destination="-1" eventType="touchUpInside" id="oTC-tu-X8x"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbV-5Z-zKd">
                     <rect key="frame" x="125" y="318.5" width="125" height="30"/>
                     <state key="normal" title="Pause"/>
+                    <connections>
+                        <action selector="pause:" destination="-1" eventType="touchUpInside" id="fgo-Qo-Nw1"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hih-40-swb">
                     <rect key="frame" x="250" y="318.5" width="125" height="30"/>
                     <state key="normal" title="Reset"/>
+                    <connections>
+                        <action selector="reset:" destination="-1" eventType="touchUpInside" id="ElM-xL-iSa"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
